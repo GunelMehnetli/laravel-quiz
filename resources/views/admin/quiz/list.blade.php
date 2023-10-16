@@ -4,7 +4,7 @@
         <div class="card-body">
             <a href="{{ route('quizzes.create') }}" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Quiz
                 yarad</a>
-            <table class="table table-bordered">
+            <table class="table table-bordered mt-3">
                 <thead>
                     <tr>
                         <th scope="col">Quiz</th>
