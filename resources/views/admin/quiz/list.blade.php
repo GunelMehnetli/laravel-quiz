@@ -20,6 +20,8 @@
                             <td>{{ $quiz->status }}</td>
                             <td>{{ $quiz->finished_at }}</td>
                             <td class="d-flex justify-content-center">
+                                <a href="{{ route('questions.index', $quiz->id) }}"
+                                    class="btn btn-sm  btn-warning mr-2"><i class="fa fa-question"></i></a>
                                 <a href="{{ route('quizzes.edit', $quiz->id) }}" class="btn btn-sm  btn-primary mr-2"><i
                                         class="fa fa-pen"></i></a>
                                 <form method="POST" action="{{ route('quizzes.destroy', $quiz->id) }}">
